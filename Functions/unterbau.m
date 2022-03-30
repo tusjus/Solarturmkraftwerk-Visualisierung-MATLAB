@@ -6,7 +6,7 @@ C = rgb(236,236,236);
 
 %[x,y] = Kreise(r,x,y)
 
-FFfffunk
+
 %% Vom Boden nach oben:
 
 r = 0.5;
