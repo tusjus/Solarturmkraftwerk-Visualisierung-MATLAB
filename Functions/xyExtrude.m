@@ -8,7 +8,7 @@ function xyExtrude(x,y,h,c)
     end
 
     %vv closing the shape 
-    fill3([x(1) x(end) x(end) x(1)],[y(1) y(end) y(end) y(1)],[0 0 h h],c,'LineStyle','none') % closing the shape
+    fill3([x(1) x(end) x(end) x(1)],[y(1) y(end) y(end) y(1)],[0 0 h h],c,'LineStyle','none')
 
 % Boden, Deckel
 fill3(x,y,zeros(length(x)),c,'LineStyle','none')
