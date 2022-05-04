@@ -40,7 +40,7 @@ for j = 1:size(pos,1)
     x2 = x1;         y2 = y1+breite;          z2 = z1;
 
     fill3(x1,y1,z1,c,'linestyle','none')
-    prisma([x1 y1 z1],[x2 y2 z2],c)
+    prisma([x1 y1 z1],[x2 y2 z2],c);
     fill3(x2,y2,z2,c,'linestyle','none');
 
     % Punkte erstellen

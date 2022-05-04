@@ -79,7 +79,7 @@ R = rotx(alpha); % Rotationsmatrix
 % rückverschieben
     ProfilOgd = ProfilOVgd' + drehpnkt; % Profil Oben gedreht
     ProfilUgd = ProfilUVgd' + drehpnkt; 
-    prisma(ProfilOgd,ProfilUgd,[1,0,1])% Pink
+    %prisma(ProfilOgd,ProfilUgd,[1,0,1])% Pink
 
 
 
@@ -108,18 +108,20 @@ R = rotx(alpha); % Rotationsmatrix
 
 
 
-% entpacken
-
+% Punkte
+idx = 1:14;
 for i = 1:3:size(DiagonalsO6,2)
-
-    prisma(DiagonalsO6(:,i:i+2),DiagonalsU6(:,i:i+2),rgb(132, 66, 245))
+    idx = idx+14;
+    [Diagonals6.x(:,idx),Diagonals6.y(:,idx),Diagonals6.z(:,idx)] = prisma(DiagonalsO6(:,i:i+2),DiagonalsU6(:,i:i+2),rgb(132, 66, 245));
     endcap(DiagonalsO6(:,i:i+2),rgb(132, 66, 245))
     endcap(DiagonalsU6(:,i:i+2),rgb(132, 66, 245))
 end
 
 
 
-
+Diagonals6.Cap.x = [DiagonalsO6(:,1:3:end) DiagonalsU6(:,1:3:end)];
+Diagonals6.Cap.y = [DiagonalsO6(:,2:3:end) DiagonalsU6(:,2:3:end)];
+Diagonals6.Cap.z = [DiagonalsO6(:,3:3:end) DiagonalsU6(:,3:3:end)];
 
 
 
