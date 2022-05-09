@@ -38,8 +38,8 @@ Mittelding3.x = [Mittelding3.x A(:,1) B(:,1)];
 Mittelding3.y = [Mittelding3.y A(:,2) B(:,2)];
 Mittelding3.z = [Mittelding3.z A(:,3) B(:,3)];
 
-%% Für die anderen 2               1.V                 2.V
-xabst = 1;
+%% Für die anderen 2                 1.                 2.
+xabst = 1;                         % V                  V 
 Mittelding3.y = [Mittelding3.y Mittelding3.y       Mittelding3.y];
 Mittelding3.z = [Mittelding3.z Mittelding3.z       Mittelding3.z];
 Mittelding3.x = [Mittelding3.x Mittelding3.x+xabst Mittelding3.x+2*xabst];
