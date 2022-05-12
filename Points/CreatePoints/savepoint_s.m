@@ -1,0 +1,1 @@
+save Punkte_s.mat Mirror1bot_s Mirror1top_s Mast_s Formteil_s Ring_s Mirror1_s Pads21_s Bracket21_s SupArm3_s Diagonals6_s TorqueTube2_s Mittelding3_s
